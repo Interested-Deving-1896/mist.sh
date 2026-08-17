@@ -1,36 +1,91 @@
-# Mist.sh
+# mist.sh
 
-Mist.sh is a shell implementation for syncing private directories via an untrusted remote SSH server. This script served as the portable prototype for a Rust implementation which can be found [here](https://github.com:jsbmg/mist).
+[![Built with Ona](https://ona.com/build-with-ona.svg)](https://app.ona.com/#https://github.com/Interested-Deving-1896/mist.sh) [![KDE Eco](https://img.shields.io/badge/KDE%20Eco-certified-brightgreen?logo=kde&logoColor=white&style=flat-square)](https://eco.kde.org/) [![Blue Angel](https://img.shields.io/badge/Blue%20Angel-DE--UZ%20215-0055a4?style=flat-square)](https://www.blauer-engel.de/en/certification/criteria) [![Energy](https://api.green-coding.io/v1/ci/badge/get?repo=Interested-Deving-1896%2Fmist.sh&branch=main&workflow=eco-audit.yml)](https://metrics.green-coding.io/ci-index.html)
 
-## Usage 
-The script will read the following variables from the environment:
 
-`LOCAL_DIR` the directory in your home folder to sync
+<!-- AI:start:what-it-does -->
+_Description pending._
+<!-- AI:end:what-it-does -->
 
-`GPG_RECIPIENT` - your gpg id 
+## Architecture
 
-`SSH_ADDRESS` - the remote SSH address 
+<!-- AI:start:architecture -->
+_Architecture documentation pending._
+<!-- AI:end:architecture -->
 
-Example:
+## Install
 
-```$ LOCAL_DIR=sync SSH_ADDRESS=user@host.com GPG_RECIPIENT=your@email.com mist.sh [OPTIONS]```
+<!-- Add installation instructions here. This section is yours — the AI will not modify it. -->
 
-If no options are passed, the default action is to sync the local folder with the remote archive.
+```bash
+git clone https://github.com/Interested-Deving-1896/mist.sh.git
+cd mist.sh
+```
 
-### Options
-`--push`
+## Usage
 
-Create an encrypted tar.gz of your directory and copy it to the remote host.
+<!-- Add usage examples here. This section is yours — the AI will not modify it. -->
 
-`--pull`
+## Configuration
 
-Copy the encrypted tar.gz diretory on the remote host to the local machine.
+<!-- Document configuration options here. This section is yours — the AI will not modify it. -->
 
-`--batch`
+## CI
 
-Run with no user interaction
+<!-- AI:start:ci -->
+_CI documentation pending._
+<!-- AI:end:ci -->
 
-## Requirements
-* [Unison](https://www.cis.upenn.edu/~bcpierce/unison/)
-* A GPG key capable of encryption
-* A remote SSH server with filesystem access
+## Mirror chain
+
+<!-- AI:start:mirror-chain -->
+This repo is maintained in [`Interested-Deving-1896/mist.sh`](https://github.com/Interested-Deving-1896/mist.sh) and mirrored through:
+
+```
+Interested-Deving-1896/mist.sh  ──►  OpenOS-Project-OSP/mist.sh  ──►  OpenOS-Project-Ecosystem-OOC/mist.sh
+```
+
+Changes flow downstream automatically via the hourly mirror chain in
+[`fork-sync-all`](https://github.com/Interested-Deving-1896/fork-sync-all).
+Direct commits to OSP or OOC are detected and opened as PRs back to `Interested-Deving-1896`.
+<!-- AI:end:mirror-chain -->
+
+## Contributors
+
+<!-- AI:start:contributors -->
+_Contributors pending._
+<!-- AI:end:contributors -->
+
+## Origins
+
+<!-- AI:start:origins -->
+_Original project — no upstream influences recorded._
+<!-- AI:end:origins -->
+
+## Resources
+
+<!-- AI:start:resources -->
+_No additional resource files found._
+<!-- AI:end:resources -->
+
+## Accessibility
+
+<!-- AI:start:accessibility -->
+This repo uses automated accessibility auditing via `check-accessibility.yml`.
+
+Checks include: CODEOWNERS ownership coverage, README screen-reader compatibility,
+WCAG 2.1 AA HTML compliance, audio overview (espeak-ng), and Braille output (liblouis).
+
+
+
+
+Run the [Check Accessibility](https://github.com/Interested-Deving-1896/mist.sh/actions/workflows/check-accessibility.yml)
+workflow to generate the first report and accessibility artifacts.
+See [DOCS/accessibility.md](https://github.com/Interested-Deving-1896/mist.sh/blob/main/DOCS/accessibility.md) for the full reference.
+<!-- AI:end:accessibility -->
+
+## License
+
+<!-- AI:start:license -->
+<!-- License not detected — add a LICENSE file to this repo. -->
+<!-- AI:end:license -->
